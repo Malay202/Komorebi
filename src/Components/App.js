@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import './App.css'
 import Lander from './Lander'
 import Odetect from './Odetect'
+// import TextRead from './TextRead';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Lander />}/>
-          <Route path="/obj_detect" element={<Odetect />} />
+          <Route path="/obj_detect" exact element={<Odetect />} />
+          {/* <Route path="/file_reading" exact element={<TextRead/>}/> */}
         </Routes>
       </BrowserRouter>
     </div>
