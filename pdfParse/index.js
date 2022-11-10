@@ -17,4 +17,4 @@ app.post("/extract-text", (req, res)=>{
         res.send(result.text);
     });
 });
-app.listen(5000);
+app.listen(3000);
