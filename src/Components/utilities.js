@@ -15,6 +15,11 @@ export const drawRect =(detection, ctx)=>{
         ctx.fillText(text, x ,y)
         ctx.rect(x,y, width, height)
         ctx.stroke();
+
+        //Speech synthesis
+        let utterance = new SpeechSynthesisUtterance(text);
+        speechSynthesis.speak(utterance);
+        console.log(utterance);
     })
 }
 
